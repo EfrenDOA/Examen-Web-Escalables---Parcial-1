@@ -1,0 +1,19 @@
+<div class="btn-group" ngbDropdown>
+    <button class="btn btn-success" ngbDropdownToggle>
+      Ordenar por...
+    </button>
+    <ul ngbDropdownMenu>
+      <li><a ngbDropdownItem (click)="applyFilter('asc')">Título de manera ascendente a-z</a></li>
+      <li><a ngbDropdownItem (click)="applyFilter('desc')">Título de manera descendente z-a</a></li>
+    </ul>
+</div>
+
+<div class="btn-group" ngbDropdown>
+    <button class="btn btn-success" ngbDropdownToggle>
+      Reorganización
+    </button>
+    <ul ngbDropdownMenu>
+      <li><a ngbDropdownItem (click)="applyFilter('reverse')">Invertir posición</a></li>
+      <li><a ngbDropdownItem (click)="applyFilter('return')">Volver a la posición original</a></li>
+    </ul>
+</div>

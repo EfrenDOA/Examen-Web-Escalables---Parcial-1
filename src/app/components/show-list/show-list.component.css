@@ -1,0 +1,12 @@
+.container {
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.form-control {
+    margin: 10px;
+}
+
+.btn-primary {
+    margin: 10px;
+}

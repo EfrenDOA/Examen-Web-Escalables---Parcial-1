@@ -1,0 +1,10 @@
+.container {
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.containerHead {
+    display: flex;
+    flex-wrap: wrap;
+}
+

@@ -1,0 +1,15 @@
+<div class="container d-flex">
+    <div class="card" [ngClass]="{'selected': select}" style="width: 18rem;">
+      <img [src]="show.image" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p style="float: right; cursor: pointer; background-color:red; padding: 4px 10px; border-radius: 5px;color:aliceblue; font-size: 12px;" (click)="onDeleteCard()"><b>X</b></p>
+
+        <h5 class="card-title">{{show.name}}</h5>
+        <p class="card-text">{{show.description}}</p>
+
+        <button class="btn btn-primary" (click) = "selectDesign()">{{select ? "Deseleccionar" : "Seleccionar"}}</button>
+
+        <button class="btn btn-primary" style="margin-left: 60px;" (click)="onSendInfo()">Editar</button>
+      </div>
+    </div>
+</div>
